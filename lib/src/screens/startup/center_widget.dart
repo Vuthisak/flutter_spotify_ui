@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 
-class CenterWidget extends StatefulWidget {
+class CenterWidget extends StatelessWidget {
   const CenterWidget({super.key});
 
-  @override
-  State<CenterWidget> createState() => _CenterWidgetState();
-}
-
-class _CenterWidgetState extends State<CenterWidget> {
   @override
   Widget build(BuildContext context) {
     return const Column(

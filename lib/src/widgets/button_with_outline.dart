@@ -15,25 +15,51 @@ class ButtonWithOutline extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OutlinedButton(
-      style: OutlinedButton.styleFrom(
-        side: const BorderSide(
-          width: 0.6,
-          color: Colors.white,
-          style: BorderStyle.solid,
-        ),
+    return Padding(
+      padding: const EdgeInsets.only(
+        left: 45.0,
+        right: 45.0,
       ),
-      onPressed: onPressed,
-      child: Stack(
-        children: [
-          Image(
-            alignment: AlignmentDirectional.centerStart,
-            width: 18.0,
-            height: 18.0,
-            image: AssetImage(iconPath),
+      child: SizedBox(
+        width: double.infinity,
+        child: ButtonTheme(
+          minWidth: double.infinity,
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              side: const BorderSide(
+                width: 0.6,
+                color: Colors.white,
+                style: BorderStyle.solid,
+              ),
+            ),
+            onPressed: onPressed,
+            child: SizedBox(
+              width: double.infinity,
+              child: Stack(
+                alignment: AlignmentDirectional.centerStart,
+                children: [
+                  Image(
+                    alignment: AlignmentDirectional.center,
+                    width: 18.0,
+                    height: 18.0,
+                    image: AssetImage(iconPath),
+                  ),
+                  Container(
+                    alignment: AlignmentDirectional.center,
+                    child: Text(
+                      label,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
-          Text(label)
-        ],
+        ),
       ),
     );
   }
