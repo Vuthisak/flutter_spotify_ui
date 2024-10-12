@@ -24,9 +24,10 @@ class ButtonWithOutline extends StatelessWidget {
         ),
       ),
       onPressed: onPressed,
-      child: Column(
+      child: Stack(
         children: [
           Image(
+            alignment: AlignmentDirectional.centerStart,
             width: 18.0,
             height: 18.0,
             image: AssetImage(iconPath),
