@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_spotify_ui/src/screens/startup/startup_screen.dart';
+import 'package:flutter_spotify_ui/src/screens/startup/startup_screen_widget.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,7 +11,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: StartupScreen(),
+      home: StartupScreenWidget(),
     );
   }
 }
