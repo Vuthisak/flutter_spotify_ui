@@ -18,6 +18,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets: 
+    - assets/images/bg_startup_header.png
     - assets/images/img_spotify.png
     - assets/images/ic_login_with_google.png
     - assets/images/ic_login_with_facebook.png

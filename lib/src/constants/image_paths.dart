@@ -1,6 +1,7 @@
 class ImagePaths {
   static const String _assetPath = "assets/images/";
 
+  static const String bgStartupHeader = "${_assetPath}bg_startup_header.png";
   static const String imgSpotify = "${_assetPath}img_spotify.png";
   static const String icLoginWithGoogle =
       "${_assetPath}ic_login_with_google.png";

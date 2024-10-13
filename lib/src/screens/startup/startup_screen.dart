@@ -16,15 +16,9 @@ class StartupScreen extends StatelessWidget {
           ),
           child: Column(
             children: [
-              Expanded(
-                child: HeaderWidget(),
-              ),
-              Center(
-                child: CenterWidget(),
-              ),
-              Expanded(
-                child: ButtonGroupWidget(),
-              ),
+              HeaderWidget(),
+              CenterWidget(),
+              ButtonGroupWidget(),
             ],
           ),
         ),

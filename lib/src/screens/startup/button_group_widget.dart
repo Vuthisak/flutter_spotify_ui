@@ -7,54 +7,56 @@ class ButtonGroupWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
-      child: Column(
-        children: [
-          Padding(
-              padding: const EdgeInsets.only(
-                left: 45.0,
-                right: 45.0,
-                top: 22.0,
-              ),
-              child: SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: null,
-                  style: ButtonStyle(
-                    backgroundColor: WidgetStateProperty.all(
-                      const Color(0xFF1ED760),
-                    ),
-                  ),
-                  child: const Text(
-                    "Sign up for free",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+    return Expanded(
+      child: SizedBox(
+        width: double.infinity,
+        child: Column(
+          children: [
+            Padding(
+                padding: const EdgeInsets.only(
+                  left: 45.0,
+                  right: 45.0,
+                  top: 22.0,
                 ),
-              )),
-          const ButtonWithOutline(
-            color: Colors.green,
-            iconPath: ImagePaths.icLoginWithGoogle,
-            label: "Continue with Gooogle",
-            onPressed: null,
-          ),
-          const ButtonWithOutline(
-            color: Colors.green,
-            iconPath: ImagePaths.icLoginWithFacebook,
-            label: "Continue with Facebook",
-            onPressed: null,
-          ),
-          const ButtonWithOutline(
-            color: Colors.green,
-            iconPath: ImagePaths.icLoginWithApple,
-            label: "Continue with Apple",
-            onPressed: null,
-          ),
-        ],
+                child: SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: null,
+                    style: ButtonStyle(
+                      backgroundColor: WidgetStateProperty.all(
+                        const Color(0xFF1ED760),
+                      ),
+                    ),
+                    child: const Text(
+                      "Sign up for free",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                )),
+            const ButtonWithOutline(
+              color: Colors.green,
+              iconPath: ImagePaths.icLoginWithGoogle,
+              label: "Continue with Gooogle",
+              onPressed: null,
+            ),
+            const ButtonWithOutline(
+              color: Colors.green,
+              iconPath: ImagePaths.icLoginWithFacebook,
+              label: "Continue with Facebook",
+              onPressed: null,
+            ),
+            const ButtonWithOutline(
+              color: Colors.green,
+              iconPath: ImagePaths.icLoginWithApple,
+              label: "Continue with Apple",
+              onPressed: null,
+            ),
+          ],
+        ),
       ),
     );
   }
