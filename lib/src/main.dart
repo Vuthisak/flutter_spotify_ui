@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_spotify_ui/src/screens/startup/startup_screen_widget.dart';
+import 'package:flutter_spotify_ui/src/navigator/navigator_route.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,8 +10,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: StartupScreenWidget(),
-    );
+    return MaterialApp.router(routerConfig: NavigatorRoute.router);
   }
 }

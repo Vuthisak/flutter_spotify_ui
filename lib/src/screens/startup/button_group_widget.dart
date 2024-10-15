@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spotify_ui/src/constants/image_paths.dart';
+import 'package:flutter_spotify_ui/src/navigator/navigator_part.dart';
 import 'package:flutter_spotify_ui/src/widgets/button_with_outline.dart';
+import 'package:go_router/go_router.dart';
 
 class ButtonGroupWidget extends StatelessWidget {
   const ButtonGroupWidget({super.key});
@@ -21,7 +23,9 @@ class ButtonGroupWidget extends StatelessWidget {
                 child: SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: null,
+                    onPressed: () {
+                      context.go(Destination.createAccount);
+                    },
                     style: ButtonStyle(
                       backgroundColor: WidgetStateProperty.all(
                         const Color(0xFF1ED760),
