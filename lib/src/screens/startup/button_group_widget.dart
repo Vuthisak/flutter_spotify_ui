@@ -24,7 +24,7 @@ class ButtonGroupWidget extends StatelessWidget {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                      context.go(Destination.createAccount);
+                      context.push(Destination.createAccount);
                     },
                     style: ButtonStyle(
                       backgroundColor: WidgetStateProperty.all(

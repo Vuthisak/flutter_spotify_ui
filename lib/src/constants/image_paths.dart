@@ -8,4 +8,5 @@ class ImagePaths {
   static const String icLoginWithFacebook =
       "${_assetPath}ic_login_with_facebook.png";
   static const String icLoginWithApple = "${_assetPath}ic_login_with_apple.png";
+  static const String icChevronLeft = "${_assetPath}ic_chevron_left.png";
 }
